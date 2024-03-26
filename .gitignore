@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test sample_kyouniori</title>
+<!-- <title>『人を知る』人工知能講座は、京都大学が人工知能にまつわる講義と演習を提供します。｜ 京大オリジナル株式会社</title> -->
+<!-- <meta name="description" content="本講座では、京都大学情報学研究科知能情報学の各研究室の教員が、人工知能の本質の理解とその実世界課題解決に向けた実践的技術の習得を目指します。" />
+<meta name="keywords" content="人工知能,AI,社会人講座,京都大学,画像,音声,言語,メディア情報処理,機械学習,ディープラーニング" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href='common/css/style.css?ver=<?php echo date("YmdHis",filemtime("common/css/style.css"));?>' /> -->
+<!-- <script type="text/javascript" src='common/js/jquery-3.4.0.min.js'></script>
+<script type="text/javascript" src='common/js/jquery-migrate-3.0.1.min.js'></script>
+<script type="text/javascript" src='common/js/jquery.easing.1.3.min.js'></script>
+<script type="text/javascript" src='common/js/comm.js'></script> -->
+<link rel="stylesheet" type="text/css" href='./style.css' />
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNCR755');</script>
+<!-- End Google Tag Manager --><br>
+</head>
+<body id="top">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNCR755"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- header -->
+	<header>
+		<div id="top" class="kjc-hd">
+			<div class="kjc-toplogo">
+				<a href="https://www.kyodai-original.co.jp/open-academy/" target="_blank"><img src="./common/img/comm/logo.png" alt="" /></a>
+			</div><!-- /kjc-toplogo -->
+			<ul class="kjc-ultop">
+				<li><a href="#course">講座概要</a></li>
+				<li><a href="#curriculum">カリキュラム</a></li>
+				<li><a href="#lecturer">講師紹介</a></li>
+				<li><a href="#requirements">募集要項</a></li>
+				<li><a href="#docdownload">資料ダウンロード</a></li>
+			</ul>
+		</div>			
+	</header><!-- /header -->
+	<div class="kjc-wrap">		
+		<!-- ttl image -->
+		<div class="kjc-ttl-img10">
+			<img class="pc-only" src="./common/img/home/mv_pc.jpg" alt=""/>
+			<img class="sp-only" src="./common/img/home/mv_sp.jpg" alt=""/>
+		</div><!-- /ttl image -->
+		
+		<!-- fix URL -->
+		<ul class="fixUl">
+			<li><a href="https://business.form-mailer.jp/fms/7ea5889c230931" target="_blank">お申し込み</a></li>
+            <li><a href="https://business.form-mailer.jp/fms/fb3a02d2231265" target="_blank">お問合せ<span><br /></span>説明会申込</a></li>
+		</ul><!-- /fix URL -->
+		
+		<!-- course part -->
+		<div id="course" class="kjc-cnt10 kjc-bg10">
+			<div class="kjc-cnt10-10">
+				<div class="kjc-ttl10">
+					<h1 class="kjc-h1-10">COURSE <br class="sp-only">OVERVIEW</h1>
+					<h1 class="kjc-h2-10">講座概要</h1>
+				</div>
+				<p class="kjc-p10">
+					本講座では、基づいた<br>
+					「」にまつわる講義と演習を提供します。<br>
+					専⾨講座で、<br class="pc-only">
+					⼈技術の習得を⽬指します。<br>
+					て、ワンランク上の問題解決。<br>
+					触れられる機会（加）や<br class="pc-only">
+					流も可能です。
+				</p>
+				<!-- <p class="kjc-p10">
+					本講座では、京都⼤学情報学研究科知能情報学の最先端の研究内容に基づいた<br>
+					「⼈を知る」⼈⼯知能にまつわる講義と演習を合計7⽇間で提供します。<br>
+					技術の成り⽴ちの背景・基礎から、最新の動向、そして演習までをカバーする専⾨講座で、<br class="pc-only">
+					⼈⼯知能の本質理解とその実課題解決に向けた実践的技術の習得を⽬指します。<br>
+					最先端研究に携わる研究者からの直接講義と具体的実装体験を通して、ワンランク上の問題解決を⽬指します。<br>
+					講座に参加するのみならず、京都⼤学情報学研究科の研究成果に触れられる機会（知能情報学シンポジウムへの参加）や<br class="pc-only">
+					教員との個別⾯談を通したアカデミアとの交流も可能です。
+				</p> -->
+				<h1 class="kjc-h3-10">特徴</h1>
+				<div class="kjc-cnt10-crc10">
+					<dl class="kjc-dl10">
+						<dt>
+							<img src="./common/img/home/ico_home1.png" alt="ico_home1" />
+							最先端の流れそのものを作っている<br>トップランナーの研究者が直接指導
+						</dt>
+						<dd>
+							現状のツールを知るだけではなく、今後の⼈⼯知能の流れを作るアカデミアの先⾏研究にも触れることができます。
+						</dd>
+					</dl>
+					<dl class="kjc-dl10">
+						<dt>
+							<img src="./common/img/home/ico_home2.png" alt="ico_home2" />
+							要点を無駄なく<br>正しく押さえることが可能
+						</dt>
+						<dd>
+							忙しい⽅、何を学ぶべきかわからない、どこを押さえるべきかわからない⽅に向けて、⼤学での学習を効果的に集中して提供いたします。
+						</dd>
+					</dl>	
+					<dl class="kjc-dl10">
+						<dt>
+							<img src="./common/img/home/ico_home3.png" alt="ico_home3" />
+							網羅的な⼈⼯知能に関する<br>研究分野に触れられる
+						</dt>
+						<dd>
+							実世界に根ざした問題を解決するために、機械学習のみではなく、「⼈を知るための⼈⼯知能」（知能メディア）、「⼈を知ることによってできる⼈⼯知能」（脳認知科学）に関する体系的な学びを得ることができます。
+						</dd>
+					</dl>	
+				</div>
+				<h1 class="kjc-h3-10">対象</h1>
+				<p class="kjc-p20">
+						<ul class="kjc-ul10">
+							<li>①新規事業・先⾏開発 ②研究 ③技術・製造 ④ソリューション開発等の部⾨の研究開発従事者およびそれに準ずる⽅</li>
+							<li>⼈⼯知能を活⽤した課題解決に取り組んでいる・取り組みたい技術者</li>
+							<li>データサイエンスに携わる⽅で、よりワンランク上の問題解決に取り組みたい⽅</li>
+						</ul>
+				</p>
+				<h1 class="kjc-h3-10">前提条件、知識</h1>
+				<p class="kjc-p20">
+					実問題解決に繋がる知能情報学の全体像の理解、分野全体を俯瞰した系統的な学習をしていただくために、7⽇間通しでの参加をいただくこと<br>
+					⼤学初等の微分積分、線形代数、統計学の知識、Python等のオブジェクト指向⾔語でのプログラミング経験があること<br>
+					<span class="kjc-spn10"></span>
+					<ul class="kjc-ul10">
+						<li>数学レベルに不安のある⽅には⼈⼯知能やデータサイエンスを学ぶために有⽤と思われる初歩的な数学を説明した「⼈⼯知能を学ぶための数学超速⼊⾨」の受講をおすすめします。<a class="kjc-link-bld-udl" href="https://kyodai-original.socialcast.jp/contents/category/intro-math-online" target="_blank">《詳しくはこちら》</a></li>
+						<li>Python等のオブジェクト指向⾔語でのプログラミング経験に不安がある⽅には推薦教材の紹介も可能です。</li>
+					</ul>
+				</p>
+				<h1 class="kjc-h3-10">参加者の声・属性</h1>
+					<h2 class="kjc-h3-20">過去の<u><a href="./koe2024.html">講座受講者の声や属性はこちら</a></u>からご覧ください。</h2>
+				<div class="kjc-cnt10-crc20">
+					<p>
+						<a href="./koe2024.html"><img src="./common/img/home/vioce_01.png" alt="vioce_01" /></a>
+					</p>
+					<p>
+						<a href="./koe2024.html"><img src="./common/img/home/vioce_02.png" alt="vioce_02" /></a>
+					</p>
+				</div>
+				<p class="kjc-p30">
+					<a class="kjc-link10" href="./koe2024.html">詳しくはこちら</a>
+				</p>
+			</div>
+		</div><!-- /course -->
+		
+		<!-- curriculum -->
+		<div id="curriculum" class="kjc-cnt10 kjc-bg20">
+			<div class="kjc-cnt10-10">
+				<div class="kjc-ttl10">
+					<h1 class="kjc-h1-10">CURRICULUM</h1>
+					<h1 class="kjc-h2-10">カリキュラム</h1>
+				</div>
+				<p class="kjc-p10">
+					機械学習、知能メディア（コンピュータビジョン、⾳声情報処理、⾃然⾔語処理）、<br />
+					脳認知科学（⼼理・認知情報学、脳情報学）をまとめて提供
+				</p>
+				<p class="kjc-ttl40">講義と演習を合計7⽇間（1⽇ 90分×5コマ）</p>
+				<div class="kjc-scroll-h10">
+					<table class="kjc-tbl10">
+						<tr>						
+							<td>&nbsp;</td>
+							<td>day</td>
+							<td>⽇程</td>
+							<td>時間</td>
+							<td>テーマ</td>
+						</tr>
+						<tr>						
+							<td class="td-clr30 kjc-clr-whtlbld ">脳認知科学</td>
+							<td>1</td>
+							<td>2024年8月21日（水）</td>
+							<td>9:30〜18:00</td>
+							<td>心理・認知情報学</td>
+						</tr>
+						<tr>
+							<td class="td-clr10 kjc-clr-whtlbld " rowspan="2">認知システム</td>
+							<td>2</td>
+							<td>2024年8月28日（水）</td>
+							<td>9:30〜18:00</td>
+							<td>機械学習</td>
+						</tr>
+						<tr>						
+							<td>3</td>
+							<td>2024年8月29日（⽊）</td>
+							<td>9:30〜18:00</td>
+							<td>機械学習</td>
+						</tr>
+						<tr>
+							<td class="td-clr20 kjc-clr-whtlbld " rowspan="3">知能メディア</td>
+							<td>4</td>
+							<td>2024年9月4日（水）</td>
+							<td>9:30〜18:00</td>
+							<td>コンピュータビジョン</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>2024年9月5日（⽊）</td>
+							<td>9:30〜18:00</td>
+							<td>⾃然⾔語処理</td>
+						</tr>
+						<tr>						
+							<td>6</td>
+							<td>2024年9月11日（水）</td>
+							<td>9:30〜18:00</td>
+							<td>⾳声情報処理</td>
+						</tr>
+						<tr>
+							<td class="td-clr30 kjc-clr-whtlbld ">脳認知科学</td>
+							<td>7</td>
+							<td>2024年9月18日（水）</td>
+							<td>9:30〜18:00</td>
+							<td>脳情報学</td>
+						</tr>
+					</table>
+				</div>
+				<p class="kjc-p30">
+					<a class="kjc-link10" href="common/pdf/curriculum.pdf" target="_blank">カリキュラム詳細ダウンロードはこちら</a>
+				</p>
+				<p class="kjc-p30">
+					<img src="./common/img/home/img_home3.png" alt="img_home3" />					
+				</p>
+			</div>
+		</div><!-- /curriculum -->
+		
+		<!-- lecturer -->
+		<div id="lecturer" class="kjc-cnt10 kjc-bg10">
+			<div class="kjc-cnt10-10">
+				<div class="kjc-ttl10">
+					<h1 class="kjc-h1-10">LECTURER <br class="sp-only">INTRODUCTION</h1>
+					<h1 class="kjc-h2-10">講師紹介</h1>
+						<span class="kjc-spn-font80">※講義担当日程順に記載</span>
+				</div>
+				<div class="kjc-cnt10-10-lectr">
+					<!-- 西田 眞也 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/7-nishida.png" alt="Nishida" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>認知情報学</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>西田 眞也</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+								<dd>1990年京都大学文学研究科（心理学専攻）博士後期課程研究指導認定退学。ATR視聴覚機構研究所を経て、1992年に日本電信電話株式会社（NTT）入社。基礎研究所およびコミュニケーション科学基礎研究所にて人間の感覚情報処理の基礎研究と応用技術開発に従事。2019年から現職。NTT在職中に、京都大学文学研究科より博士（文学）の学位を取得（1996）、東京工業大学連携教授（2006-2012）などを兼務。日本学術振興会賞（2006年）、科学技術分野の文部科学大臣表彰・科学技術賞（2015）等を受賞。日本視覚学会会長（2014-2018）、新学術領域研究「多元質感知」領域代表（2015-2020）、学術変革領域（A）「深奥質感」領域代表（2020-2025）、日本学術会議会員（2017-2023）。</dd>
+						</dl>
+					</div>
+					<!-- 熊田 孝恒 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/6-kumada.png" alt="Kumada" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>心理情報学</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>熊田 孝恒</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+							<dd>筑波大学大学院博士課程心理学研究科修了。博士（教育学）。産業技術総合研究所グループリーダーなどを経て2013年より現職。理化学研究所、脳科学総合研究センター、連携ユニットリーダーを兼務。専門は認知神経心理学、脳機能計測学、応用認知心理学。<br />
+								著書は『商品開発のための心理学』（編著，勁草書房）など。
+							</dd>
+						</dl>
+					</div>
+					<!-- 鹿島 久嗣 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/1-kashima.png" alt="Kashima" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>機械学習</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>鹿島 久嗣</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+							<dd>1999年京都大学修士課程を修了ののち、日本アイ・ビー・エム株式会社に入社。業務の傍ら、2007年に同大学博士課程を修了し、博士（情報学）の学位を取得。2009年より東京大学准教授を経て、2014年より京都大学教授。人工知能やその基礎技術である機械学習の研究開発とその実社会応用に従事。日本学術振興会賞（2019）等の受賞多数。</dd>
+						</dl>
+					</div>
+					<!-- 山本 章博 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/2-yamamoto.png" alt="Yamamoto" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>機械学習</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>山本 章博</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+							<dd>1985年京都大学理学部卒業。1990年九州大学大学院総合理工学研究科博士課程修了。理学博士。2003年より現職。専門は知能情報学の基礎理論、特に数理論理学を利用した機械学習理論の研究を行ってきた。近年は離散数学の機械学習への応用を中心に研究を行っている。人工知能学会、情報処理学会、日本ソフトウェア学会各会員。</dd>
+						</dl>
+					</div>
+					<!-- 西野　恒 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/3-nishino.png" alt="Nishino" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>コンピュータビジョン</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>西野　恒</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+							<dd>1997年東京大学工学部電子情報工学科卒、1999年東京大学工学系研究科電子情報工学専攻修士課程修了、2002年東京大学理学系研究科情報科学専攻博士課程修了。博士（理学）。2002年から2005年まで、コロンビア大学コンピュータサイエンス科Postdoctoral ResearchScientist。2005年から2011年までドレクセル大学Assistant Professor、2011年から2016年まで同大Associate Professor、2016年から2018年まで同大FullProfessor。その間、2013年カーネギーメロン大学Visiting Associate Professor、2012年から2018年まで大阪大学産業科学研究所客員教授。2015年より国立情報学研究所客員教授。2008年NSF CAREER Award受賞。IEEEシニア会員、ACM会員。</dd>
+						</dl>
+					</div>
+					<!-- 村脇 有吾 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/5-murawaki.png" alt="Murawaki" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>自然言語処理</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>村脇 有吾</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+							<dd>2011年京都大学大学院情報学研究科博士後期課程修了、博士（情報学）。同年京都大学学術情報メディアセンター特定助教、2013年九州大学大学院システム情報科学研究院助教、2016 年京都大学大学院情報学研究科助教、2020年同講師、2023年同准教授、現在にいたる。テキスト解析および計算言語学に関する研究に従事、言語処理学会、情報処理学会各会員。</dd>
+						</dl>
+					</div>
+					<!-- 河原 達也 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/4-kawahara.png" alt="Kawahara" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>音声情報処理</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>河原 達也</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+							<dd>1989年京都大学大学院工学研究科修士課程修了。博士（工学）。同大学工学部助手・助教授を経て、2003年京都大学学術情報メディアセンター／情報学研究科教授。音声言語処理、特に音声認識及び対話システムに関する研究に従事。主著に、「音声認識システム」「音声対話システム」（いずれもオーム社）。IEEE Fellow、APSIPA会長、ISCA事務総長、日本学術会議連携会員。</dd>
+						</dl>
+					</div>
+					<!-- 神谷 之康 -->
+					<div class="kjc-cnt10-10-lectr-cnt10">
+						<dl class="kjc-dl20">
+							<dt><img src="./common/img/professor/8-kamitani.png" alt="Kamitani" /></dt>
+							<dd>
+								<dl class="kjc-dl20-10">
+									<dt><span>脳情報学</span></dt>
+									<dd>京都大学情報学研究科</dd>
+									<dd>神谷 之康</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="kjc-dl30">
+							<dt>Profile</dt>
+							<dd>奈良県生まれ。東京大学教養学部卒業。カリフォルニア工科大学でPh.D.取得後、ハーバード大学、プリンストン大学、ATR脳情報研究所を経て、2015年から現職。機械学習を用いて脳信号を解読する「ブレイン・デコーディング」法を開発し、ヒトの脳活動パターンから視覚イメージや夢を解読することに成功した。SCIENTIFIC AMERICAN誌「科学技術に貢献した50人」（2005）、塚原仲晃賞（2013年）、日本学術振興会賞（2014年）、大阪科学賞（2015）等を受賞。2018年、ATRフェローの称号を授与される。サーペンタイン・ギャラリー（ロンドン）でのピエール・ユイグの展示“UUmwelt”（2018年）のための映像を提供するなど、アーティストとのコラボレーションも進めている。</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div><!-- /lecturer -->
+		
+		<!-- requirements -->
+		<div id="requirements" class="kjc-cnt10 kjc-bg20">
+			<div class="kjc-cnt10-10">
+				<div class="kjc-ttl10">
+					<h1 class="kjc-h1-10">REQUIREMENTS</h1>
+					<h1 class="kjc-h2-10">募集要項</h1>
+				</div>
+				<table class="kjc-tbl20">
+					<tr>
+						<th>内容</th>
+						<td>
+							京都大学情報学研究科知能情報学の研究室による各分野の講義・演習<br>
+							<!--【認知システム】 ①機械学習（2日）<br>
+							【知能メディア】 ②コンピュータビジョン ③音声情報処理 ④自然言語処理<br>
+							【脳認知科学】 ⑤心理・認知情報学 ⑥脳情報学--></td>
+					</tr>
+					<tr>
+						<th>日程</th>
+						<td>
+							2024年8月〜9月（水・木） 9:30〜18:00<br>
+							8月21日（水）心理・認知情報学 <br>
+							8月28日（水）機械学習<br>
+							8月29日（木）機械学習<br>
+							9月04日（水）コンピュータビジョン<br>
+							9月05日（木）自然言語処理 <br>
+							9月11日（水）音声情報処理<br>
+							9月18日（水）脳情報学</td>
+					</tr>
+					<tr>
+						<th>場所</th>
+						<td>オンラインシステム（Zoom）による配信</td>
+					</tr>
+					<tr>
+						<th>必要なもの</th>
+						<td>PCおよびオンライン（Zoom）受講が可能なウェブ環境（演習環境は提供いたします）</td>
+					</tr>
+					<tr>
+						<th>定員</th>
+						<td>20〜30名程度</td>
+					</tr>
+					<tr>
+						<th>受講料</th>
+						<td>498,000円（税込）</td>
+					</tr>
+					<tr>
+						<th>申込締切</th>
+						<td>2024年8月10日（土）（定員に達し次第締切ります）</td>
+					</tr>
+					<tr>
+						<th>特徴</th>
+						<td>・各研究室の教員によるプログラム構成、直接講義<br>
+							・個々のレベルに合わせたアシスタントによるフォロー<br>
+							・演習で使用したソースコードの提供<br>
+							・slack などチャットツールによる事後フォロー<br>
+							・教員との個別面談</td>
+					</tr>
+					<tr>
+						<th>参加特典</th>
+						<td>
+							・京都大学情報学研究科知能情報学が開催するシンポジウムへの参加（秋頃を予定、京都大学内での開催）<br>
+							・上記開催時に、講座教員との交流や個別相談会を実施
+						</td>
+					</tr>
+					<tr>
+						<th>主催</th>
+						<td>京都大学大学院情報学研究科、京大オリジナル株式会社</td>
+					</tr>
+				</table>
+				<h4 class="kjc-h4-10">注意事項</h4>
+				<h4 class="kjc-h4-20">講座の開講・中止</h4>
+				<p class="kjc-p40">
+					締切日前であっても定員になり次第、お申し込みの受付けを締め切ります。<br>
+					受講者が一定数に達しない場合など、やむを得ず講座の開講を中止することがあります。その場合、お支払い済みの受講料はお返しいたします。
+				</p>
+				<h4 class="kjc-h4-20">キャンセル規定</h4>
+				<p class="kjc-p40">
+					ご都合により申し込み後にキャンセルされる場合は、以下キャンセル料が発生します。<br>
+					①開講日の21日前から8日前 受講料の50％<br>
+					②開講日の7日前から 受講料の100%<br>
+					病気・出張その他の受講者の都合により欠席した場合の返金や授業の振替は行いません。
+				</p>
+				<h4 class="kjc-h4-20">写真等の取り扱い</h4>
+				<p class="kjc-p40">
+					セミナーの様子は、写真・ビデオ撮影を行わせていただきます。また、撮影した写真・動画は、京大オリジナル（株）の広報手段、講演資料、マスメディア提供資料、書籍などに用いる場合があります。<br>
+					個人が特定されないよう加工することをご希望の方は、期間中にお申し出ください。
+				</p>
+			</div>
+		</div><!-- /requirements -->
+		
+		<!-- docdownload -->
+		<div id="docdownload" class="kjc-cnt10 kjc-bg30">
+			<div class="kjc-cnt10-10">
+				<div class="kjc-ttl10">
+					<h1 class="kjc-h1-20">DOCUMENT <br class="sp-only">DOWNLOAD</h1>
+					<h1 class="kjc-h2-20">資料ダウンロード</h1>
+				</div>
+				<p class="kjc-cnt10-10-10">
+					<a class="kjc-link20" href="common/pdf/pamphlet.pdf" target="_blank">パンフレットダウンロード</a>
+					<a class="kjc-link20" href="common/pdf/curriculum.pdf" target="_blank">カリキュラムダウンロード</a>
+				</p>
+			</div>
+		</div><!-- /docdownload -->
+		
+		<!-- footer -->
+		<footer>			
+			<p class="kjc-ft-cpr">©Kyoto University Original Co., Ltd. All rights reserved.</p>
+		</footer><!-- /footer -->
+	</div><!-- /kjc-wrap -->
+	
+	<!-- sp mn -->
+	<div class="sp-only">
+		<div class="kjc-sp-mn-icon-open" onclick="openmenusp();">
+			<img src="./common/img/comm/ico_open.png" alt="MENU" />
+		</div>
+		<div class="kjc-sp-mn-icon-close" onclick="closemenusp();">
+				<img src="common/img/comm/ico_close.png" alt="X CLOSE" />
+			</div>
+		<div class="kjc-sp-mn">			
+			<div class="kjc-sp-mn-cnt">
+				<table>					
+					<tr>					
+						<td><a href="#top">HOME</a></td>
+						<td><a href="#course">講座概要</a></td>
+						<td><a href="#curriculum">カリキュラム</a></td>
+						<td><a href="#lecturer">講師紹介</a></td>
+						<td><a href="#requirements">募集要項</a></td>
+						<td><a href="#docdownload">資料ダウンロード</a></td>	
+						<td><a href="./koe2023.html">参加者の声</a></td>					
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div><!-- /sp menu -->
+	
+	<!-- gotop -->
+	<div class="gotop"><a href="#top"><img src="./common/img/comm/ico_gotop.png" alt="TOP" /></a></div>
+</body>
+</html>
+
+style.css@charset "utf-8";
+
+/*=========================================================================*/
+/* FONT FACE */
+/*=========================================================================*/
+/*==Noto Serif JP==*/
+/*Bold*/
+@font-face {
+	font-family: 'Noto Serif JP';
+	src: url('../font/NotoSerifJP-Bold.otf') format('opentype');
+	font-weight: 700;
+}
+
+/*=========================================================================*/
+/* RESET */
+/*=========================================================================*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd,
+	q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
+	th, td, article, aside, canvas, details, figcaption, figure, footer,
+	header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	color: #29318a;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+tbody {
+	width: 100%;
+	display: table;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before, q:after {
+	content: ''
+}
+
+abbr, acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	*font-size: 100%;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+legend {
+	color: #000;
+}
+
+/* IE7 hack */
+*:first-child+html body {
+	font-size: small;
+}
+
+/* IE6 hack */
+* html body {
+	font-size: small;
+}
+
+a img {
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+a img:hover {
+	opacity: 0.8;
+}
+
+/*--------------------------------------------------------------------
+MAIN
+--------------------------------------------------------------------*/
+.pc-only {
+	display: block;
+}
+
+.sp-only {
+	display: none;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	margin: 0px auto;
+	padding: 0px 0px;
+	color: #222222;
+	font-family: "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+.kjc-wrap {
+	position: relative;
+	top: 103px;
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	padding: 0px 0px;
+}
+
+/*--------------------------------------------------------------------
+HEADER
+--------------------------------------------------------------------*/
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 103px;
+	background-color: #ffffff;
+	z-index: 1050;
+}
+.kjc-hd {
+	width: calc(100% - 40px);
+	max-width: 1400px;
+	margin: 0px auto 0px auto;
+	padding: 15px 0px 8px 0px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  	align-content: stretch;
+  	z-index: 1050;
+}
+.kjc-toplogo {
+	width: auto;
+	margin: 0px 0px 0px 0px;
+}
+.kjc-toplogo img {
+	display: bolck;
+}
+ul.kjc-ultop {
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px;
+	width: auto;
+}
+ul.kjc-ultop li {
+	margin: 0px 30px 0px 0px;
+	display: inline-block;
+}
+ul.kjc-ultop li:last-child {
+	margin-right: 0px;
+}
+ul.kjc-ultop li a {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+}
+
+/*--------------------------------------------------------------------
+SP MENU
+--------------------------------------------------------------------*/
+.kjc-sp-mn-icon-open, .kjc-sp-mn-icon-close  {
+	position: fixed;
+	top: min(calc((100vw - 70px) * 0.0793 + 10px - 7px), 38px);
+	right: 10px;
+	width: 20px;
+	margin: 0px auto;
+	padding: 0px 0px;
+	text-align: right;	
+	z-index: 1100;
+	cursor: pointer;
+	display: none;
+}
+.kjc-sp-mn-icon-close {
+	top: min(calc((100vw - 70px) * 0.0793 + 10px - 9px), 35px);
+	width: 18px;
+}
+
+.kjc-sp-mn-icon-open img, .kjc-sp-mn-icon-close img {
+	width: 100%;
+	display: block;
+}
+
+.kjc-sp-mn {
+	position: fixed;
+	top: min(calc((100vw - 70px) * 0.1586 + 20px), 83px);
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	background-color: #f9f9f9;
+	opacity: 0.95;
+	z-index: 1100;
+	display: none;
+}
+
+.kjc-sp-mn-cnt {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px 0px;
+	text-align: center;
+	z-index: 1100;
+}
+
+.kjc-sp-mn-cnt table {
+	width: 100%;
+}
+
+.kjc-sp-mn-cnt td {
+	width: calc(100% - 40px);
+	text-align: left;
+	margin: 0px auto;
+	padding: 10px 0px 10px 40px;
+	font-size: 18px;
+	font-weight: bold;
+	border-top: 1px solid #cccccc;
+	display: inline-block;
+}
+.kjc-sp-mn-cnt td:last-child {
+	border-bottom: 1px solid #cccccc;
+}
+.kjc-sp-mn-cnt td a {
+	color: #333333;
+}
+
+/*------------------------------------------------------------
+	fixUl
+------------------------------------------------------------*/
+.kjc-wrap .fixUl {
+	position: fixed;
+	right: 0;
+	top: 200px;
+	z-index: 9;
+}
+.kjc-wrap .fixUl li a {
+	display: block;
+	width: 60px;
+	height: 120px;
+	padding:15px 19px 15px 21px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.0rem;
+	line-height: 1;
+	box-sizing: border-box;
+	background-color: #f66818;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.kjc-wrap .fixUl li a:hover {
+	opacity: 0.7;
+}
+.kjc-wrap .fixUl li:last-child {
+	margin-top: 10px;
+}
+.kjc-wrap .fixUl li:last-child a {
+	padding: 15px 10px 15px 13px;
+	line-height: 1.2;
+	writing-mode: vertical-rl;
+	background-color: #b22113;
+}
+
+/*--------------------------------------------------------------------
+COMM
+--------------------------------------------------------------------*/
+.kjc-bg10 {
+	background-color: #ffffff;
+} 
+.kjc-bg20 {
+	background-color: #f1f1f1;
+}
+.kjc-bg30 {
+	background-color: #242264;
+}
+.kjc-cnt10 {
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 80px 0px;
+}
+.kjc-cnt10-10 {
+	width: calc(100% - 40px);
+	max-width: 1200px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;	
+}
+.kjc-cnt10-20 {
+	width: calc(100% - 40px);
+	max-width: 1080px;
+	margin: 40px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.kjc-ttl10 {
+	clear: both;
+	width: 100%;
+	margin: 0px auto 20px auto;
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+}
+.kjc-h1-10, .kjc-h1-20 {
+	font-family: 'Noto Serif JP', serif, "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+	font-size: 40px;
+	line-height: 1.3;
+	font-weight: bold;
+	color: #242264;	
+}
+.kjc-h2-10, .kjc-h2-20 {
+	font-size: 18px;	
+}
+.kjc-h1-20, .kjc-h2-20 {
+	color: #ffffff;
+}
+.kjc-h3-10 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 50px 0px 15px 0px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 2px solid #242264;
+}
+.kjc-h3-20 {
+	font-size: 16px;
+	color: #242264;		
+}
+.kjc-h3-30 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 2px solid #242264;
+}
+
+.kjc-link10 {
+	width: auto;
+	margin: 20px 0px 20px 0px;
+	padding: 13px 52px 13px 67px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #242264;
+	background-image: url(../img/comm/ico_arrow_white.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;	
+}
+.kjc-link20 {
+	width: auto;
+	margin: 20px 0px 20px 0px;
+	padding: 15px 52px 15px 55px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333333;
+	background-color: #ffffff;
+	background-image: url(../img/comm/ico_arrow_blue.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;	
+}
+.kjc-link30 {
+	width: calc(25% - 30px);
+	margin: 20px 15px 0px 15px;
+	padding: 12px 52px 12px 55px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: #333333;
+	background-color: #ffffff;
+	background-image: url(../img/comm/ico_arrow_under.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	border: 2px solid #242264;	
+}
+.kjc-spn-font80 {
+	font-size: 80%;
+}
+.kjc-link-bld-udl {
+	font-weight: bold;
+	text-decoration: underline;	
+}
+/*--------------------------------------------------------------------
+PAGE
+--------------------------------------------------------------------*/
+/* home */
+.kjc-ttl-img10 {
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	display: block;
+}
+.kjc-ttl-img10 img {
+	width: 100%;
+}
+.kjc-p10 {
+	text-align: center;
+}
+.kjc-cnt10-crc10 {
+	width: calc(100% - 40px);
+	max-width: 1200px;
+	margin: 25px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	display: flex;
+  	align-items: top;
+  	justify-content: center;
+  	align-content: stretch;
+}
+.kjc-dl10 {
+	width: calc(33% - 40px);
+	margin: 0px 20px 0px 20px;
+}
+.kjc-dl10 dt {
+	text-align: center;
+	color: #242264;
+	font-weight: bold;
+}
+.kjc-dl10 dt img {
+	margin: 0px auto 15px auto;
+	display: block;
+}
+.kjc-dl10 dd {
+	text-align: left;
+}
+.kjc-p20 {
+	text-align: left;
+}
+.kjc-ul10 {
+	list-style-type: disc;
+}
+.kjc-ul10 li {	
+	margin: 0px 0px 0px 15px;
+}
+.kjc-spn10 {
+	font-size: 14px;
+	text-align: left;
+}
+.kjc-cnt10-crc20 {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.kjc-cnt10-crc20 p {
+	width: calc(50% - 20px);
+	text-align: center;
+}
+.kjc-cnt10-crc20 p:first-child {
+	margin-right: 20px;
+}
+.kjc-cnt10-crc20 p:last-child {
+	margin-left: 20px;
+}
+.kjc-cnt10-crc20 p img {
+	width: 100%;
+	margin: 20px 0px 10px 0px;
+}
+.kjc-p30 {
+	clear: both;
+	margin: 40px auto 0px auto;
+	text-align: center;
+}
+
+.kjc-cnt10-10-10 {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.kjc-cnt10-10-10 a:first-child {
+	margin-right: 20px;
+}
+.kjc-cnt10-10-10 a:last-child {
+	margin-left: 20px;
+}
+.kjc-ttl40 {
+	font-weight: bold;
+	text-align: left;
+	margin: 20px 0px 8px 0px;
+}
+.kjc-scroll-h10 {
+	overflow-x: none;
+}
+.kjc-tbl10 {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0px 0px 50px 0px;	
+}
+.kjc-tbl10 td {
+	padding: 10px 10px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #a1a1a1;
+}
+.kjc-tbl10 tr:first-child td {
+	font-weight: bold;
+}
+.kjc-tbl10 td.td-clr10 {
+	background-color: #997973;
+}
+.kjc-tbl10 td.td-clr20 {
+	background-color: #6f98c6;
+}
+.kjc-tbl10 td.td-clr30 {
+	background-color: #d686b1;
+}
+.kjc-tbl10 tr:first-child td:nth-child(1) {
+	width: 170px;
+}
+.kjc-tbl10 tr:first-child td:nth-child(2) {
+	width: 80px;
+}
+.kjc-tbl10 tr:first-child td:nth-child(3) {
+	width: 230px;
+}
+.kjc-tbl10 tr:first-child td:nth-child(4) {
+	width: 180px;
+}
+.kjc-tbl10 tr:first-child td:nth-child(5) {
+	width: calc(100% - 170px - 80px - 230px - 180px - 8px - 100px);
+}
+.kjc-tbl10 td.kjc-clr-whtlbld {
+	color: #ffffff;
+	font-weight: bold;
+}
+.kjc-cnt10-10-lectr {
+	width: 100%;
+	margin: 35px 0px 0px 0px;
+}
+.kjc-cnt10-10-lectr-cnt10 {
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 30px 0px 30px 0px;
+	display: flex;
+  	align-items: top;
+  	justify-content: center;
+	border-top: 1px solid #a1a1a1;
+}
+.kjc-dl20 {
+	flex: 400px;
+	display: flex;
+  	align-items: top;
+  	justify-content: center;
+}
+.kjc-dl20 dt, .kjc-dl20 dd {
+	flex: 50%;
+}
+.kjc-dl20-10 {
+	flex: 100%;
+}
+.kjc-dl20-10 dt {
+	margin-bottom: 10px;	
+}
+.kjc-dl20-10 dt > span {
+	padding: 5px 5px 5px 5px;	
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #242264;
+	font-weight: bold;
+}
+.kjc-dl20-10 dd {
+	margin-bottom: 15px;
+	font-size: 18px;
+	color: #242264;
+	font-weight: bold;
+}
+.kjc-dl20-10 dd:last-child {
+	font-size: 26px;
+	color: #333333;
+	font-weight: bold;
+}
+.kjc-dl30 {
+	flex: calc(100% - 400px);
+}
+.kjc-dl30 dt {
+	font-size: 18px;
+	font-weight: bold;
+	color: #242264;
+}
+.kjc-dl30 dd {
+	text-align: left;
+}
+
+.kjc-tbl20 {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0px 0px 50px 0px;
+}
+.kjc-tbl20 th {
+ 	padding: 10px 10px;
+ 	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	border-top: 2px solid #242264;
+}
+.kjc-tbl20 td {
+	width: calc(100% - 200px - 40px);
+ 	padding: 10px 10px 10px 30px;
+	text-align: left;
+	vertical-align: middle;
+	border-top: 1px solid #a1a1a1;
+ }
+.kjc-tbl20 tr:last-child th {	
+	border-bottom: 2px solid #242264;
+}
+.kjc-tbl20 tr:last-child td {	
+	border-bottom: 1px solid #a1a1a1;
+}
+.kjc-tbl20 tr:first-child th:nth-child(1) {
+	width: 200px;
+}
+.kjc-tbl20 tr:first-child td:nth-child(2) {
+	width: calc(100% - 200px - 60px);
+} 
+.kjc-h4-10 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #242264;
+	margin: 30px 0px -10px 0px;
+}
+.kjc-h4-20 {
+	font-size: 17px;
+	font-weight: bold;
+	color: #333333;
+	margin: 20px 0px 5px 0px;
+}
+.kjc-p40 {
+	text-align: left;
+}
+.kjc-spn-clr10 {
+	color: #ff0000;
+}
+/* /home */
+
+/* voice */
+.kjc-ttl05 {
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	background-color: #000000;
+}
+.kjc-ttl05-10 {
+	width: calc(100% - 40px);
+	max-width: 1200px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	text-align: left;
+	font-size: 40px;
+	color: #ffffff;
+}
+h1.kjc-h1-05 {
+	width: 50%;
+	height: 100%;
+	vertical-align: middle;
+}
+.kjc-ttl05-10 img {
+	width: 50%;
+	max-width: 538px;
+	float: right;
+}
+.kjc-h5-10 {
+	margin: 20px 0px 0px 0px;
+	font-size: 20px;
+	color: #242264;
+	font-weight: bold;
+}
+.kjc-cnt10-10-20 {
+	clear: both;
+	width: calc(100% - 40px);
+	margin: 30px auto 30px auto;
+	padding: 20px 0px 40px 0px;
+	text-align: center;
+}
+.kjc-cnt10-10-20 img {
+	max-width: 100%;
+	text-align: center;
+	margin: 0px auto 0px auto;
+}
+.kjc-ul10-vc {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  	align-items: top;
+  	justify-content: center;
+}
+.kjc-ul10-vc li {
+	position: relative;
+	width: calc(50% - 92px);
+	padding: 30px 30px;
+	font-size: 16px;
+	font-weight: bold;
+	/*background-image: url(../img/comm/ico_comment_left.png), url(../img/comm/ico_comment_right.png);
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;*/
+	border: 1px solid #a1a1a1;
+}
+.kjc-ul10-vc li::after {
+  position: absolute;  
+  left: -2px;
+  top: -2px;
+  content: url(../img/comm/ico_comment_left.png);
+}
+.kjc-ul10-vc li::before {
+  position: absolute;
+  right: -2px;
+  bottom: -11px;
+  content: url(../img/comm/ico_comment_right.png);
+}
+.kjc-ul10-vc li:nth-child(odd) {
+	margin: 25px 25px 25px 0px;
+}
+.kjc-ul10-vc li:nth-child(even) {
+	margin: 25px 0px 25px 25px;
+}
+.kjc-ul10-vc li span {
+	background-image: url(../img/comm/bg-yellow.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	background-size: 20px 10px;
+}
+/* /voice */
+
+
+
+/*--------------------------------------------------------------------
+FOOTER
+--------------------------------------------------------------------*/
+footer  {
+	clear: both;
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 30px 0px 0px 0px;
+}
+.kjc-ft-cnt {
+	width: calc(100% - 40px);
+	max-width: 1200px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.kjc-ft-cnt10 {
+	width: auto;
+	order: 1;
+}
+.kjc-ft-cnt20 {
+	width: auto;
+	order: 2;
+}
+ul.kjc-ulbt10 {
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px;
+	width: auto;
+}
+
+ul.kjc-ulbt10 li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 30px 0px 0px;
+}
+ul.kjc-ulbt10 li a {
+	font-size: 18px;
+	color: #333333;
+}
+ul.kjc-ulbt10 li:last-child {
+	margin: 0px 0px 0px 0px;
+}
+.kjc-ft-cpr {
+	clear: both;
+	width: 100%;
+	max-width: 1200px;
+	margin: 30px auto 0px auto;
+	padding: 0px 0px 10px 0px;
+	font-size: 15px;
+	text-align: center;
+	color: #333333;
+}
+/*--------------------------------------------------------------------
+BACK TO TOP PAGE
+---------------------------------------------------------------------*/
+.gotop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.gotop img {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------------
+CLEARFIX
+--------------------------------------------------------------------*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+* html .clearfix {
+	height: 1px;
+}
+
+/*--------------------------------------------------------------------
+BLANK
+--------------------------------------------------------------------*/
+.blk-1, .blk-5, .blk-10, .blk-15, .blk-20, .blk-30, .blk-40, .blk-50, .blk-60, .blk-70, .blk-80, .blk-100, .bkl-1-15 {
+	clear: both;
+	width: 100%;
+	font-size: 0px;
+	line-height: 1%;
+}
+.blk-1 {height: 1px;}
+.blk-5 {height: 5px;}
+.blk-10 {height: 10px;}
+.blk-15 {height: 15px;}
+.blk-20 {height: 20px;}
+.blk-30 {height: 30px;}
+.blk-40 {height: 40px;}
+.blk-50 {height: 50px;}
+.blk-60 {height: 60px;}
+.blk-70 {height: 70px;}
+.blk-80 {height: 80px;}
+.blk-100 {height: 100px;}
+.blk-1-15 {height: 1px;	margin-top: -15px;}
+/*--------------------------------------------------------------------
+RESPONSIVE
+--------------------------------------------------------------------*/
+@media screen and (max-width: 1199px) {
+	
+}
+/*-------------------- 1024 --------------------*/
+@media screen and (max-width: 1024px) {
+	.kjc-tbl10 tr:first-child td:nth-child(1) {
+		width: 120px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(2) {
+		width: 50px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(3) {
+		width: 150px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(4) {
+		width: 130px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(5) {
+		width: calc(100% - 120px - 50px - 150px - 130px - 8px - 100px);
+	}
+}
+/*-------------------- 768 --------------------*/
+@media screen and (max-width: 768px) {
+	.pc-only {
+		display: none;
+	}
+	.sp-only {
+		display: block;
+	}
+	/*-------------------- header --------------------*/
+	.kjc-wrap {
+		top: min(calc((100vw - 70px) * 0.1586 + 20px), 83px);
+	}
+	header {
+		height: min(calc((100vw - 70px) * 0.1586 + 20px), 83px);
+	}
+	.kjc-hd {
+		width: calc(100% - 20px);
+		padding: 10px 0px 10px 0px;
+	}	
+	.kjc-toplogo {
+		margin: 0px 0px 0px 0px;
+	}
+	.kjc-toplogo img {
+		width: calc(100% - 50px);
+		max-width: 460px;
+	}
+	span.kjc-sp10 {
+		font-size: 12px;
+	}
+	h1.kjc-h1-10, h1.kjc-h1-10 {
+		font-size: 38px;
+	}
+	ul.kjc-ultop {
+		display: none;
+	}
+
+	/*-------------------- sp menu --------------------*/
+	.kjc-sp-mn-icon-open {
+		display: block;
+	}
+	/*-------------------- fixurl --------------------*/
+	.kjc-wrap .fixUl {
+		top: auto;
+		bottom: 0px !important;			
+		width: 100%;
+		display: flex;
+	}
+	.kjc-wrap .fixUl li {
+		width: 50%;
+	}
+	.kjc-wrap .fixUl li a {
+		width: auto;
+		height: auto;
+		text-align: center;
+		padding: 22px 0 20px !important;
+		font-size: 1.0rem;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.kjc-wrap .fixUl li:last-child {
+		margin-top: 0px !important;
+	}
+	.kjc-wrap .fixUl li:last-child a {
+		padding: 22px 0 20px !important;
+		line-height: 1;
+		writing-mode: horizontal-tb;
+		vertical-align: middle;
+	}
+	.kjc-wrap .fixUl li:last-child a span {
+		display: none;
+	}
+	/*--------------------------------------------------------------------
+		COMM 
+	--------------------------------------------------------------------*/
+	.kjc-cnt10 {
+		padding: 0px 0px 60px 0px;
+	}
+	.kjc-cnt10-10 {
+		width: calc(100% - 40px);
+		margin: 0px auto 0px auto;
+		padding: 0px 0px 0px 0px;	
+	}
+	.kjc-cnt10-20 {
+		width: calc(100% - 0px);
+		margin: 20px auto 0px auto;
+		padding: 0px 0px 0px 0px;
+		flex-wrap: wrap;
+	}		
+	.kjc-link10 {
+		width: calc(100% - 75px);
+		max-width: 400px;
+		margin: 20px 0px 20px 0px;
+		padding: 13px 15px 13px 60px;
+		text-align: center;		
+	}
+	.kjc-link20 {
+		width: calc(100% - 55px);
+		max-width: 250px;
+		padding: 15px 15px 15px 40px;
+		margin: 10px auto 10px auto;
+		font-size: 17px;
+		text-align: center;		
+	}
+	.kjc-link30 {
+		width: calc(50% - 80px);	
+		padding: 12px 12px 12px 30px;	
+	}
+	.kjc-link30:nth-child(odd) {
+		margin: 20px 15px 0px 0px;
+	}	
+	.kjc-link30:nth-child(even) {
+		margin: 20px 0px 0px 15px;
+	}
+	/*--------------------------------------------------------------------
+		PAGE 
+	--------------------------------------------------------------------*/
+	/* home */
+	.kjc-p10 {
+		text-align: left;
+	}	
+	.kjc-cnt10-10-10 {	
+		flex-direction: column;	
+		flex-wrap: wrap;
+	}
+	.kjc-cnt10-10-10 a:first-child, .kjc-cnt10-10-10 a:last-child  {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.kjc-cnt10-crc10 {
+		width: calc(100% - 0px);
+		margin: 15px auto 0px auto;
+		padding: 0px 0px 0px 0px;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.kjc-dl10 {
+		width: calc(100% - 0px);
+		margin: 0px auto 0px auto;
+	}
+	.kjc-dl10 dt {
+		text-align: center;
+		color: #242264;
+		font-weight: bold;
+	}
+	.kjc-dl10 dt img {
+		margin: 15px auto 15px auto;
+	}	
+	.kjc-cnt10-crc20 {
+		width: 100%;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.kjc-cnt10-crc20 p {
+		width: calc(100% - 0px);
+		text-align: center;
+	}
+	.kjc-cnt10-crc20 p:first-child, .kjc-cnt10-crc20 p:last-child {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.kjc-cnt10-crc20 p img {
+		width: 100%;
+		margin: 20px 0px 0px 0px;
+	}
+	.kjc-scroll-h10 {
+		overflow-x: scroll;
+	}
+	.kjc-tbl10 {
+		width: 100%;
+		min-width: 980px;
+		margin: 0px 0px 10px 0px;	
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(1) {
+		width: 150px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(2) {
+		width: 60px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(3) {
+		width: 180px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(4) {
+		width: 160px;
+	}
+	.kjc-tbl10 tr:first-child td:nth-child(5) {
+		width: calc(100% - 150px - 60px - 18px - 160px - 8px - 100px);
+	}
+	.kjc-p30 img {
+		max-width: 90%;
+	}
+	.kjc-cnt10-10-lectr-cnt10 {	
+		flex-wrap: wrap;
+	}
+	.kjc-dl20 {
+		flex: 100%;
+	}
+	.kjc-dl20 dt, .kjc-dl20 dd {
+		flex: 50%
+	}
+	.kjc-dl20 dt img {
+		max-width: 94%;
+	}
+	.kjc-dl30 {
+		flex: 100%;
+	}
+	.kjc-tbl20 {
+		width: 100%;	
+		margin: 0px 0px 50px 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.kjc-tbl20 th {
+		width: 100%;
+	 	padding: 12px 0px 10px 0px;
+	 	font-weight: bold;
+		vertical-align: middle;
+		display: inline-block;
+	}
+	.kjc-tbl20 td {
+		width: 100%;
+	 	padding: 12px 0px 10px 0px;
+		vertical-align: middle;
+		display: inline-block;
+	 }
+	
+	.kjc-tbl20 tr:first-child th:nth-child(1) {
+		width: 100%;
+	}
+	.kjc-tbl20 tr:first-child td:nth-child(2) {
+		width: 100%;
+	}
+	.kjc-tbl20 tr:last-child th {	
+		border-bottom: none;
+	}
+	.kjc-tbl20 tr:last-child td {	
+		border-bottom: 2px solid #242264;
+	}
+	/* /home */
+	
+	/* voice */		
+	.kjc-ttl05-10 {
+		width: calc(100% - 0px);
+		margin: 0px 0px 0px 0px;
+		padding: 25px 0px;
+		background-image: url(../img/voice/img_voice10.png);
+		background-position: 100% center;
+		background-repeat: no-repeat;
+		background-size: auto 78%;
+	}
+	h1.kjc-h1-05 {
+		width: 100%;
+		height: 100%;
+		margin-left: 20px;
+		font-size: 30px;
+		text-align: left;
+	}
+	.kjc-ttl05-10 img {
+		display: none;
+	}
+	.kjc-ul10-vc li {
+		width: calc(100% - 62px);
+	}
+	.kjc-ul10-vc li:nth-child(odd), .kjc-ul10-vc li:nth-child(even) {
+		margin: 25px auto 10px auto;
+	}
+	.kjc-cnt10-10-20 {
+		margin: 0px auto 0px auto;
+		padding: 10px 0px 15px 0px;
+	}
+	.kjc-cnt10-10-20 img {
+		max-width: 100%;
+		margin: 15px auto 0px auto;
+	}
+	/* /voice */
+			
+	/*-------------------- footer --------------------*/
+	.kjc-ft-cnt {
+		width: calc(100% - 30px);
+		flex-wrap: wrap;
+	}
+	.kjc-ft-cnt10 {
+		flex: 100%;
+		margin: -15px auto -10px auto;
+		order: 2;
+		text-align: center;
+	}
+	.kjc-ft-cnt10 img {
+		max-width: 90%;
+	}
+	.kjc-ft-cnt20 {
+		flex: 100%;
+		margin: 0px auto 50px auto;
+		order: 1;
+	}
+	ul.kjc-ulbt10 {
+		margin: 0px auto 0px auto;
+		padding: 0px 0px;
+		width: calc(90% + 0px);
+		display: flex;
+		flex-wrap: wrap;
+	}	
+	ul.kjc-ulbt10 li {
+		margin: 0px auto 0px auto;
+		padding: 5px 0px 3px 0px;
+		flex: calc(50% - 2px);
+		text-align: left;
+		vertical-align: middle;
+		
+	}	
+	ul.kjc-ulbt10 li:last-child {
+		margin: 0px auto 0px auto;
+	}	
+	.kjc-ft-cpr {
+		width: calc(100% - 40px);
+		margin: 30px auto 0px auto;
+		padding: 0px 0px 70px 0px;
+		font-size: 13px;
+		text-align: center;
+	}
+	.gotop {
+		right: 10px;
+		bottom: 70px;
+	}
+}
+
+/*----------------576px--------------------*/
+@media screen and (max-width: 575px) {
+
+}
